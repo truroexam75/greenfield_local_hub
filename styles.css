@@ -1,0 +1,231 @@
+/* variables */
+
+/* _px + 1vmin allows for dynamic font sizing based on screen width */
+/* Font families are defined for easy access + making it easier to change
+them if necessary - colours are also put here for the same reason */
+:root {
+    --body-font-family: "Tango Sans";
+    --heading-font-size: calc(52px + 1vmin);
+    --sub-heading-font-size: calc(24px + 1vmin);
+    --body-font-size: calc(14px + 1vmin);
+    --colour-1: #6b7967;
+    --colour-2: #718ad6;
+    --colour-3: #f0fffe;
+    --colour-4: #dce0e0;
+    --colour-5: #d01414;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: "Tango Sans";
+    src: url("assets/fonts/tango-sans-font/TangoSans-1Ge1e.ttf");
+}
+
+@font-face {
+    font-family: "Tango Sans";
+    src: url("assets/fonts/tango-sans-font/TangoSansBold-9YW2y.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Tango Sans";
+    src: url("assets/fonts/tango-sans-font/TangoSansBoldItalic-lgjr5.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Tango Sans";
+    src: url("assets/fonts/tango-sans-font/TangoSansItalic-nRjK1.ttf");
+    font-style: italic;
+}
+
+/* text styling */
+
+body {
+    font-family: var(--body-font-family);
+}
+
+h1 {
+    font-size: var(--heading-font-size);
+}
+
+h2 {
+    font-size: var(--sub-heading-font-size);
+}
+
+:not(footer) p {
+    font-size: var(--body-font-size);
+}
+
+.req {
+    color: var(--colour-5);
+}
+
+/* image, input, button and anchor styling */
+
+.search-bar-container svg {
+    width: 1.6em;
+}
+
+.search-bar-container input {
+    padding: 0.4em;
+    width: 18em;
+    outline: none;
+}
+
+button:has(svg) {
+    background-color: #00000000;
+    border: none;
+    color: var(--colour-3);
+}
+a:has(svg), a:has(svg):visited {
+    color: var(--colour-3);
+}
+
+a:hover svg, a:active svg, button:hover svg, button:active svg {
+    transform: scale(110%);
+}
+
+svg {
+    width: 2.4em;
+}
+
+button {
+    background-color: var(--colour-2);
+    font-family: var(--body-font-family);
+    padding: 0.4em;
+    border: none;
+}
+
+button:hover {
+    transform: scale(110%);
+}
+
+button:not(button:has(svg)) {
+    font-size: var(--body-font-size);
+}
+
+.button-anchor-container a, .button-anchor-container a:visited {
+    color: var(--colour-3);
+    text-decoration: none;
+}
+
+a {
+    color: var(--colour-2);
+}
+
+input {
+    margin: 0.4em 0;
+    outline: none;
+    border: none;
+    padding: 0.4em;
+    font-family: var(--body-font-family);
+    font-size: calc(var(--body-font-size) - 6px);
+    background-color: var(--colour-4);
+}
+
+/* layout */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+article {
+    margin: 0;
+}
+
+section {
+    padding: 1em;
+}
+
+section.side-by-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section.side-by-side > section {
+    max-width: 50em;
+}
+
+.hero-banner {
+    text-align: center;
+    color: var(--colour-3);
+    text-shadow: 1px 1px var(--colour-1);
+    margin: 0;
+    padding: 5em;
+    background-image: url("assets/images/hero-banner-home.webp");
+    background-size: cover;
+}
+
+.input-container {
+    font-size: var(--body-font-size);
+    display: flex;
+    flex-direction: column;
+    max-width: 15em;
+}
+
+/* navbar styling */
+
+nav {
+    background-color: var(--colour-1);
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.page-container {
+    width: 20em;
+    margin-right: -10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.page-container a, .page-container a:visited {
+    color: var(--colour-3);
+    text-decoration: none;
+}
+
+.page-container a:hover, .page-container a:active {
+    transform: scale(110%);
+}
+
+.page-container a.current {
+    font-weight: 700;
+}
+
+.page-container a:not(.current) {
+    color: var(--colour-4);
+}
+
+/* footer styling */
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 2.5fr 0.25fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav"
+        "article"
+        "footer";
+    }
+
+nav { grid-area: nav; }
+
+article { grid-area: article; }
+
+footer { grid-area: footer; }

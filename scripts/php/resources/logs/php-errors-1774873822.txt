@@ -1,0 +1,2 @@
+[30-Mar-2026 12:30:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\Users\exam75\OneDrive - Truro and Penwith College\T Level in Digital Production, Design and Development\Occupational Specialism\Task 2\code\scripts\php\sign_up_handler.php on line 46
+[30-Mar-2026 12:30:22 UTC] Input validation failed: Email address is invalid. Please provide a new address.

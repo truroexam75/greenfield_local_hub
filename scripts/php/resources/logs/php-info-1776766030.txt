@@ -1,0 +1,15 @@
+Database connected successfully.--- Statement: 
+PDOStatement Object
+(
+    [queryString] => SELECT customer_id, customer_username, customer_password
+    FROM customers
+    WHERE customer_username = :customer_username;
+    
+)
+--- Raw sign in fields: 
+Array
+(
+    [username] => pac_man
+    [password] => 1d0ntl1k3gh05t5!.
+    [customer_sign_in] => 
+)

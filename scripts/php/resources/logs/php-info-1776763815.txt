@@ -1,0 +1,45 @@
+Database connected successfully.--- Statement: 
+PDOStatement Object
+(
+    [queryString] => INSERT INTO producers (
+        producer_first_name,
+        producer_last_name,
+        producer_date_of_birth,
+        producer_email_address,
+        producer_phone_number,
+        producer_username,
+        producer_password
+    )
+    VALUES (
+        :producer_first_name,
+        :producer_last_name,
+        :producer_date_of_birth,
+        :producer_email_address,
+        :producer_phone_number,
+        :producer_username,
+        :producer_password
+    );
+)
+--- Raw sign up fields: 
+Array
+(
+    [customer_first_name] => Pac
+    [customer_last_name] => Man
+    [customer_date_of_birth] => 1980-05-22
+    [customer_email_address] => n36ek@deltajohnsons.com
+    [customer_phone_number] => 07767 485585
+    [customer_username] => pac_man
+    [customer_password] => 1d0ntl1k3gh05t5!.
+    [producer_sign_up] => 
+)
+--- Validated sign up fields: 
+Array
+(
+    [0] => producer_first_name
+    [1] => producer_last_name
+    [2] => producer_date_of_birth
+    [3] => producer_email_address
+    [4] => producer_phone_number
+    [5] => producer_username
+    [6] => producer_password
+)

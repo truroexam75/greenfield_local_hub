@@ -1,0 +1,23 @@
+Database connected successfully.--- Statement: 
+PDOStatement Object
+(
+    [queryString] => SELECT producer_id, producer_username, producer_password
+    FROM producers
+    WHERE producer_username = :producer_username;
+    
+)
+--- Raw sign in fields: 
+Array
+(
+    [username] => pac_man
+    [password] => 1d0ntl1k3gh05t5!.
+    [producer_sign_in] => 
+)
+--- Session variables: 
+Array
+(
+    [signed_in] => 1
+    [user_type] => producer
+    [user_id] => 1
+    [username] => pac_man
+)

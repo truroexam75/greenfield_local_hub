@@ -1,0 +1,22 @@
+Database connected successfully.--- Statement: 
+PDOStatement Object
+(
+    [queryString] => SELECT customer_id, customer_password
+    FROM customers
+    WHERE customer_username = :customer_username;
+    
+)
+--- Raw sign in fields: 
+Array
+(
+    [customer_username] => lorawan
+    [customer_password] => chirp_spread_spectrum_1520!?
+    [customer_sign_in] => 
+)
+--- Session variables: 
+Array
+(
+    [signed_in] => 1
+    [customer_id] => 1
+    [customer_username] => 
+)

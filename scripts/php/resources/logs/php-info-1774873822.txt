@@ -1,2 +1,0 @@
-Database connected successfully.LoraWan2005-01-0141u0a@sharebot.netlorawanchirp_spread_spectrum_1520!?customer_first_name => Lora 
-Email address is invalid. Please provide a new address.

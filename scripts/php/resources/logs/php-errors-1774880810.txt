@@ -1,6 +1,0 @@
-[30-Mar-2026 14:26:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\Users\exam75\OneDrive - Truro and Penwith College\T Level in Digital Production, Design and Development\Occupational Specialism\Task 2\code\scripts\php\sign_up_handler.php:134
-Stack trace:
-#0 C:\Users\exam75\OneDrive - Truro and Penwith College\T Level in Digital Production, Design and Development\Occupational Specialism\Task 2\code\scripts\php\sign_up_handler.php(134): PDOStatement->execute()
-#1 C:\Users\exam75\OneDrive - Truro and Penwith College\T Level in Digital Production, Design and Development\Occupational Specialism\Task 2\code\scripts\php\sign_up_handler.php(6): handle_statement('customer')
-#2 {main}
-  thrown in C:\Users\exam75\OneDrive - Truro and Penwith College\T Level in Digital Production, Design and Development\Occupational Specialism\Task 2\code\scripts\php\sign_up_handler.php on line 134

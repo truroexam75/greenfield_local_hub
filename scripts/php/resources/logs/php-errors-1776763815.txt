@@ -1,6 +1,0 @@
-[21-Apr-2026 09:30:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'producer_first_name' cannot be null in C:\Users\exam75\OneDrive - Truro and Penwith College\T Level in Digital Production, Design and Development\Occupational Specialism\Task 2\code\scripts\php\sign_up_handler.php:140
-Stack trace:
-#0 C:\Users\exam75\OneDrive - Truro and Penwith College\T Level in Digital Production, Design and Development\Occupational Specialism\Task 2\code\scripts\php\sign_up_handler.php(140): PDOStatement->execute()
-#1 C:\Users\exam75\OneDrive - Truro and Penwith College\T Level in Digital Production, Design and Development\Occupational Specialism\Task 2\code\scripts\php\sign_up_handler.php(8): handle_statement('producer')
-#2 {main}
-  thrown in C:\Users\exam75\OneDrive - Truro and Penwith College\T Level in Digital Production, Design and Development\Occupational Specialism\Task 2\code\scripts\php\sign_up_handler.php on line 140
